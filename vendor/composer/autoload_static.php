@@ -6,9 +6,15 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit331c5b57d7649a13a64bd815dc731bc0
 {
+    public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\HttpFoundation\\' => 33,
             'SON\\Framework\\' => 14,
         ),
         'P' => 
@@ -22,6 +28,14 @@ class ComposerStaticInit331c5b57d7649a13a64bd815dc731bc0
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\HttpFoundation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/http-foundation',
+        ),
         'SON\\Framework\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',

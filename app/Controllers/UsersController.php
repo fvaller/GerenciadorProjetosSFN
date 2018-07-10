@@ -6,10 +6,10 @@ use App\Models\Users;
 class UsersController
 {
 	//metodos dentro do controller são chamados de actions   
-    public function show($container, $params)
-    {
+    public function show($container, $request)
+    {    	
     	$user = new Users($container);
-    	$dados = $user->get($params[1]);
-    	return 'Meu nome é: '.$dados['name'];
+    	return $user->get($request->attributes->get(1));
+    	//return 'Meu nome é: '.$dados['name'];
     }
 }
