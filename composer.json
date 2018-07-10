@@ -1,0 +1,24 @@
+{
+    "name": "fernandovaller/gerenciadordeprojetos",
+    "authors": [
+        {
+            "name": "Fernando Valler",
+            "email": "fernandovaller@gmail.com"
+        }
+    ],
+    "require": {
+        "pimple/pimple": "^3.2"
+    },
+    "autoload":{
+    	"psr-4": {
+    		"SON\\Framework\\": "src",
+            "App\\": "app/"
+    	}
+    },
+    "scripts": {
+        "server": "php -S localhost:8080 -t public/"
+    },
+    "config": {
+        "process-timeout" : 0
+    }
+}
