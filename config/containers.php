@@ -4,6 +4,15 @@ use Pimple\Container;
 
 $container = new Container();
 
+//registrando um container
+
+//Container de eventos
+$container['events'] = function(){
+	return new Zend\EventManager\EventManager;
+
+};
+
+//Container da conexao 
 $container['db'] = function(){
 
 	$dsn = 'mysql:host=localhost;dbname=gprojetos';

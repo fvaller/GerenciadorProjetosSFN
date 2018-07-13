@@ -9,4 +9,5 @@ $router->add('GET', '/', function() {
 });
 
 //(\d+) um ou mais digitos
+//([a-z\-]+) caracteres entre a e z ou hifem
 $router->add('GET', '/users/(\d+)', '\App\Controllers\UsersController::show');
