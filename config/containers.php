@@ -9,8 +9,12 @@ $container = new Container();
 //Container de eventos
 $container['events'] = function(){
 	return new Zend\EventManager\EventManager;
-
 };
+
+//vc pode manipular o erro sem mexer no metodo criado
+// $container['httpErrorHandler'] = function(){
+// 	return 'isso é um erro grave';
+// };
 
 //Container da conexao 
 $container['db'] = function(){
