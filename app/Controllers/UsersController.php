@@ -11,7 +11,7 @@ class UsersController
     	$user = new Users($container);
 
     	//chamando o metodo create para simular o evento
-    	$user->create(['name' => 'Aldebaran Ville']); 
+    	$user->create(['name' => 'Fulano de Tal']); 
 
     	return $user->get($request->attributes->get(1));
     	//return 'Meu nome é: '.$dados['name'];
